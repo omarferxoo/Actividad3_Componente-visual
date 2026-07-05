@@ -20,8 +20,6 @@ Oaxaca, Oaxaca, 04 de Julio de 2026
 
 # Tareas Desplegables
 
-![Portada del componente](img/portada-tareas.png)
-
 ## Nombre del componente
 
 **TareasDesplegables**
@@ -34,27 +32,47 @@ Tambien incluye busqueda, boton de **Mostrar mas** y un formulario para agregar 
 
 ## Instalacion
 
-Para usar el componente en otro proyecto HTML, incluye el archivo CSS dentro de `<head>`:
+Para usar esta libreria en una pagina HTML se deben incluir dos archivos del proyecto: el CSS para los estilos visuales y el JavaScript para el comportamiento interactivo.
+
+El archivo CSS se coloca dentro de la etiqueta `<head>` para que las tarjetas tengan diseno:
 
 ```html
 <link rel="stylesheet" href="css/componente.css">
 ```
 
-Luego incluye el archivo JavaScript antes de cerrar el `<body>`:
+El archivo JavaScript se coloca antes de cerrar el `<body>` para que el navegador cargue primero el HTML y despues active el componente:
 
 ```html
 <script src="js/componente.js"></script>
 ```
 
+Ejemplo de estructura basica:
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Demo</title>
+  <link rel="stylesheet" href="css/componente.css">
+</head>
+<body>
+  <div id="lista-tareas"></div>
+
+  <script src="js/componente.js"></script>
+</body>
+</html>
+```
+
 ## Uso
 
-Primero agrega un contenedor donde se mostraran las tareas:
+Primero se agrega un contenedor en el HTML. Dentro de este contenedor se van a generar las tarjetas del componente:
 
 ```html
 <div id="lista-tareas"></div>
 ```
 
-Despues crea el componente con JavaScript:
+Despues se crea una instancia de `TareasDesplegables`. El primer parametro es el selector del contenedor y el segundo parametro es la lista de tareas que se desea mostrar:
 
 ```html
 <script src="js/componente.js"></script>
@@ -72,7 +90,18 @@ Despues crea el componente con JavaScript:
 </script>
 ```
 
+Cada tarea necesita dos datos:
+
+```js
+{
+  titulo: 'Nombre de la tarea',
+  descripcion: 'Texto que se muestra al abrir la tarjeta.'
+}
+```
+
 ## Agregar una tarea nueva
+
+El metodo `agregar` permite insertar una nueva tarea sin modificar el HTML. La nueva tarea aparece al inicio de la lista:
 
 ```js
 tareas.agregar(
@@ -83,11 +112,15 @@ tareas.agregar(
 
 ## Buscar tareas
 
+El metodo `buscar` filtra las tareas por texto. En la pagina tambien se usa con el campo de busqueda:
+
 ```js
 tareas.buscar('github');
 ```
 
 ## Mostrar mas tareas
+
+Para que la lista no crezca demasiado en pantalla, el componente muestra pocas tareas al inicio. Con `mostrarMas` se cargan mas tarjetas:
 
 ```js
 tareas.mostrarMas();
@@ -127,7 +160,7 @@ tareas.mostrarMas();
 
 ## Capturas de pantalla
 
-Agrega estas imagenes dentro de la carpeta `img`:
+Las capturas se guardan dentro de la carpeta `img`. Los nombres sugeridos son:
 
 ```text
 img/logoportada.png
@@ -138,29 +171,37 @@ img/captura-consola.png
 
 ### Componente funcionando
 
+Esta imagen debe mostrar la pagina con las tarjetas desplegables funcionando. Se recomienda abrir una tarea para que se vea el contenido interno:
+
 ![Componente funcionando](img/captura-componente.png)
 
 ### Busqueda de tareas
+
+Esta captura debe mostrar el buscador con una palabra escrita y el resultado filtrado:
 
 ![Busqueda de tareas](img/captura-busqueda.png)
 
 ### Consola
 
-Si no hay errores en consola, puedes subir una captura donde se vea limpia:
+Esta captura sirve para comprobar que el componente no genera errores de JavaScript. Abre las herramientas del navegador, entra a la pestana `Console` y toma una captura despues de usar el componente:
 
 ![Consola sin errores](img/captura-consola.png)
 
 ## Video demo
 
-Graba un video corto de maximo 1 minuto con tu voz. Puedes seguir este guion:
+El video debe durar maximo 1 minuto y debe explicar el componente como una demostracion breve. La idea es mostrar el problema, el uso y el resultado funcionando.
 
-```text
-Hola, este es mi componente TareasDesplegables.
-El problema que resuelve es que permite organizar varias tareas sin llenar la pagina de texto.
-Cada tarea se puede abrir o cerrar con un clic.
-Tambien puedo buscar una tarea, mostrar mas resultados y agregar una tarea nueva desde el formulario.
-Este componente es reutilizable porque puedo cambiar la lista de tareas desde JavaScript sin reescribir el HTML.
-```
+Puntos que debe mostrar el video:
+
+1. Presentar el componente `TareasDesplegables`.
+2. Explicar que sirve para organizar tareas o instrucciones en tarjetas desplegables.
+3. Abrir y cerrar una tarea para mostrar la interaccion.
+4. Usar el buscador para filtrar una tarea.
+5. Agregar una tarea nueva desde el formulario.
+6. Mostrar que la nueva tarea aparece arriba.
+7. Mencionar que es reutilizable porque se puede llamar con otra lista de tareas desde JavaScript.
+
+El video no debe ser solo correr la pagina. Debe explicar rapidamente por que el componente es util y como se usa.
 
 ## GitHub Pages
 
