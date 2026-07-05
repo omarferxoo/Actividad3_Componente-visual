@@ -179,8 +179,6 @@ Esta captura sirve para comprobar que el componente no genera errores de JavaScr
 
 ## Video demo
 
-El video debe durar maximo 1 minuto y debe explicar el componente como una demostracion breve. La idea es mostrar el problema, el uso y el resultado funcionando.
-
 link del video:
 
 ## Conclusion
