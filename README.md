@@ -181,6 +181,8 @@ Esta captura sirve para comprobar que el componente no genera errores de JavaScr
 
 link del video:
 
+https://www.youtube.com/watch?v=ZT0h392mZ-k
+
 ## Conclusion
 
 Con esta actividad se desarrollo un componente visual interactivo usando HTML, CSS y JavaScript puro, sin frameworks. El componente permite organizar tareas en tarjetas desplegables, buscar contenido, mostrar mas resultados y agregar nuevas tareas desde un formulario.
