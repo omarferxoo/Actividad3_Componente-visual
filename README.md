@@ -156,17 +156,7 @@ tareas.mostrarMas();
   </script>
 </body>
 </html>
-```
 
-## Capturas de pantalla
-
-Las capturas se guardan dentro de la carpeta `img`. Los nombres sugeridos son:
-
-```text
-img/logoportada.png
-img/captura-componente.png
-img/captura-busqueda.png
-img/captura-consola.png
 ```
 
 ### Componente funcionando
@@ -191,24 +181,10 @@ Esta captura sirve para comprobar que el componente no genera errores de JavaScr
 
 El video debe durar maximo 1 minuto y debe explicar el componente como una demostracion breve. La idea es mostrar el problema, el uso y el resultado funcionando.
 
-Puntos que debe mostrar el video:
+link del video:
 
-1. Presentar el componente `TareasDesplegables`.
-2. Explicar que sirve para organizar tareas o instrucciones en tarjetas desplegables.
-3. Abrir y cerrar una tarea para mostrar la interaccion.
-4. Usar el buscador para filtrar una tarea.
-5. Agregar una tarea nueva desde el formulario.
-6. Mostrar que la nueva tarea aparece arriba.
-7. Mencionar que es reutilizable porque se puede llamar con otra lista de tareas desde JavaScript.
+## Conclusion
 
-El video no debe ser solo correr la pagina. Debe explicar rapidamente por que el componente es util y como se usa.
+Con esta actividad se desarrollo un componente visual interactivo usando HTML, CSS y JavaScript puro, sin frameworks. El componente permite organizar tareas en tarjetas desplegables, buscar contenido, mostrar mas resultados y agregar nuevas tareas desde un formulario.
 
-## GitHub Pages
-
-Despues de subir el repositorio a GitHub:
-
-1. Entra a `Settings`.
-2. Abre `Pages`.
-3. Selecciona la rama `main`.
-4. Guarda los cambios.
-5. Entrega el enlace del repositorio y el enlace de GitHub Pages.
+La libreria es reutilizable porque puede insertarse en otra pagina HTML y recibir diferentes tareas desde JavaScript, sin modificar la estructura interna del componente. Esto cumple con el objetivo de crear una pieza visual que el usuario puede ver, usar e integrar en distintos proyectos.
