@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tareas Desplegables</title>
+  <link rel="stylesheet" href="css/componente.css">
+</head>
+<body>
+  <main class="contenedor">
+    <section class="presentacion">
+      <div>
+        <p class="subtitulo">Componente visual reutilizable</p>
+        <h1>Tareas desplegables</h1>
+        <p>
+          Este componente sirve para mostrar tareas en tarjetas que se abren y
+          se cierran con un clic.
+        </p>
+      </div>
+
+      <div class="caja">
+        <h2>Lista de tareas</h2>
+        <div class="buscador">
+          <input id="buscar" type="text" placeholder="Buscar tarea...">
+          <button id="btn-buscar" type="button">Buscar</button>
+        </div>
+        <div id="lista-tareas"></div>
+        <button id="mostrar-mas" type="button">Mostrar mas</button>
+      </div>
+    </section>
+
+    <section class="formulario">
+      <h2>Agregar tarea</h2>
+      <form id="form-tarea">
+        <label for="titulo">Titulo</label>
+        <input id="titulo" type="text" value="Publicar en GitHub Pages">
+
+        <label for="descripcion">Descripcion</label>
+        <textarea id="descripcion" rows="3">Subir el repositorio y activar GitHub Pages.</textarea>
+
+        <button type="submit">Agregar tarea</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="js/componente.js"></script>
+  <script>
+    const tareas = new TareasDesplegables('#lista-tareas', [
+      {
+        titulo: 'Revisar requisitos',
+        descripcion: 'Confirmar que el proyecto tenga HTML, CSS, JS y README.'
+      },
+      {
+        titulo: 'Probar el componente',
+        descripcion: 'Abrir y cerrar las tarjetas para revisar la interaccion.'
+      },
+      {
+        titulo: 'Preparar entrega',
+        descripcion: 'Subir el trabajo a GitHub y compartir el enlace.'
+      }
+    ]);
+
+    const form = document.querySelector('#form-tarea');
+    const titulo = document.querySelector('#titulo');
+    const descripcion = document.querySelector('#descripcion');
+    const buscar = document.querySelector('#buscar');
+
+    form.addEventListener('submit', function(event) {
+      event.preventDefault();
+      tareas.agregar(titulo.value, descripcion.value);
+      titulo.value = '';
+      descripcion.value = '';
+    });
+
+    document.querySelector('#btn-buscar').addEventListener('click', function() {
+      tareas.buscar(buscar.value);
+    });
+
+    buscar.addEventListener('input', function() {
+      tareas.buscar(buscar.value);
+    });
+
+    document.querySelector('#mostrar-mas').addEventListener('click', function() {
+      tareas.mostrarMas();
+    });
+  </script>
+</body>
+</html>

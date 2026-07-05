@@ -1,0 +1,170 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #eef3f8;
+  color: #1d2733;
+}
+
+.contenedor {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+  padding: 25px 0;
+}
+
+.presentacion {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 25px;
+  align-items: center;
+  min-height: 60vh;
+}
+
+.subtitulo {
+  color: #146c94;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 0 0 15px;
+  font-size: 46px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.presentacion p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.caja,
+.formulario {
+  background: white;
+  border: 1px solid #d6deea;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.buscador {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.tarea {
+  border: 1px solid #d6deea;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+
+.tarea-titulo {
+  width: 100%;
+  border: 0;
+  background: #ffffff;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.tarea-titulo:hover {
+  background: #f3f7fb;
+}
+
+.tarea-texto {
+  display: none;
+  margin: 0;
+  padding: 0 15px 15px;
+  color: #536174;
+}
+
+.tarea.abierta .tarea-texto {
+  display: block;
+}
+
+.tarea.abierta b {
+  transform: rotate(45deg);
+}
+
+.formulario {
+  margin-top: 22px;
+}
+
+form {
+  display: grid;
+  gap: 12px;
+}
+
+label {
+  font-weight: bold;
+  color: #536174;
+}
+
+input,
+textarea {
+  width: 100%;
+  border: 1px solid #d6deea;
+  border-radius: 6px;
+  padding: 12px;
+  font: inherit;
+}
+
+button[type="submit"] {
+  border: 0;
+  border-radius: 6px;
+  background: #146c94;
+  color: white;
+  padding: 13px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#btn-buscar,
+#mostrar-mas {
+  border: 0;
+  border-radius: 6px;
+  background: #146c94;
+  color: white;
+  padding: 13px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover,
+#btn-buscar:hover,
+#mostrar-mas:hover {
+  background: #0f526f;
+}
+
+#mostrar-mas {
+  width: 100%;
+  margin-top: 4px;
+}
+
+.vacio {
+  color: #536174;
+  background: #f3f7fb;
+  padding: 12px;
+  border-radius: 6px;
+}
+
+@media (max-width: 760px) {
+  .presentacion {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+}

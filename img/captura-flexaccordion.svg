@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="680" viewBox="0 0 1100 680" role="img" aria-labelledby="title desc">
+  <title id="title">Vista previa de FlexAccordion JS</title>
+  <desc id="desc">Interfaz de demostracion del componente FlexAccordion con secciones desplegables.</desc>
+  <rect width="1100" height="680" fill="#f7f8fb"/>
+  <path d="M0 0h1100v680H0z" fill="url(#bg)"/>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#166a8f" stop-opacity=".14"/>
+      <stop offset="1" stop-color="#b43d63" stop-opacity=".08"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#1c273d" flood-opacity=".18"/>
+    </filter>
+  </defs>
+  <text x="68" y="108" fill="#166a8f" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="800">LIBRERIA JAVASCRIPT REUTILIZABLE</text>
+  <text x="68" y="204" fill="#1f2733" font-family="Segoe UI, Arial, sans-serif" font-size="76" font-weight="850">FlexAccordion JS</text>
+  <text x="70" y="264" fill="#647084" font-family="Segoe UI, Arial, sans-serif" font-size="24">Acordeon interactivo para organizar contenido</text>
+  <text x="70" y="302" fill="#647084" font-family="Segoe UI, Arial, sans-serif" font-size="24">por secciones reutilizables.</text>
+  <rect x="626" y="94" width="410" height="415" rx="8" fill="#ffffff" stroke="#dce3ee" filter="url(#shadow)"/>
+  <rect x="650" y="122" width="362" height="78" rx="8" fill="#ffffff" stroke="#dce3ee"/>
+  <rect x="668" y="140" width="42" height="42" rx="8" fill="#e7f1f6"/>
+  <text x="681" y="168" fill="#166a8f" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="900">B</text>
+  <text x="728" y="167" fill="#1f2733" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="800">Que es FlexAccordion</text>
+  <circle cx="979" cy="161" r="17" fill="#eef3f8"/>
+  <text x="970" y="168" fill="#166a8f" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="900">+</text>
+  <rect x="650" y="218" width="362" height="154" rx="8" fill="#ffffff" stroke="#dce3ee"/>
+  <rect x="668" y="236" width="42" height="42" rx="8" fill="#e7f1f6"/>
+  <text x="674" y="263" fill="#166a8f" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="900">&lt;/&gt;</text>
+  <text x="728" y="263" fill="#1f2733" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="800">Como se reutiliza</text>
+  <circle cx="979" cy="257" r="17" fill="#eef3f8"/>
+  <text x="970" y="264" fill="#166a8f" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="900" transform="rotate(45 979 257)">+</text>
+  <line x1="650" y1="296" x2="1012" y2="296" stroke="#dce3ee"/>
+  <text x="682" y="330" fill="#647084" font-family="Segoe UI, Arial, sans-serif" font-size="17">Solo se crea una instancia nueva y se</text>
+  <text x="682" y="357" fill="#647084" font-family="Segoe UI, Arial, sans-serif" font-size="17">envian los datos de cada seccion.</text>
+  <rect x="650" y="390" width="362" height="78" rx="8" fill="#ffffff" stroke="#dce3ee"/>
+  <rect x="668" y="408" width="42" height="42" rx="8" fill="#e7f1f6"/>
+  <text x="683" y="435" fill="#166a8f" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="900">*</text>
+  <text x="728" y="435" fill="#1f2733" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="800">Donde se puede usar</text>
+  <circle cx="979" cy="429" r="17" fill="#eef3f8"/>
+  <text x="970" y="436" fill="#166a8f" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="900">+</text>
+</svg>
